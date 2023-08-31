@@ -13,7 +13,7 @@ app_server <- function(input, output, session) {
   drv <- dbDriver("PostgreSQL")
   pool <- dbPool(
     drv,
-    host = "localhost",
+    host = "139.159.137.207",
     #主机名，默认localhost
     port = '5432',
     #端口号，默认5432
@@ -21,7 +21,7 @@ app_server <- function(input, output, session) {
     #数据库
     user = 'postgres',
     #用户名
-    password = 'admin'
+    password = 'km619150'
   )#密码
 
   ImProxy <- mod_condition_module_server("condition_module",pool)
