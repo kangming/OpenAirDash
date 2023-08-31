@@ -5,7 +5,7 @@ account: openair
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9716358
-bundleId:
+bundleId: 7629554
 url: https://openair.shinyapps.io/OpenAirApp/
 version: 1
 asMultiple: FALSE

@@ -9,19 +9,26 @@
 #' @import lubridate
 #' @noRd
 app_server <- function(input, output, session) {
+
+  ip = golem::get_golem_options("ip")
+  port = golem::get_golem_options("port")
+  dbname = golem::get_golem_options("dbname")
+  user = golem::get_golem_options("user")
+  ps = golem::get_golem_options("ps")
+
   # Your application server logic
   drv <- dbDriver("PostgreSQL")
   pool <- dbPool(
     drv,
-    host = "139.159.137.207",
+    host = ip,
     #主机名，默认localhost
-    port = '5432',
+    port = port,
     #端口号，默认5432
-    dbname = 'openair',
+    dbname = dbname,
     #数据库
-    user = 'postgres',
+    user =user,
     #用户名
-    password = 'km619150'
+    password = ps
   )#密码
 
   ImProxy <- mod_condition_module_server("condition_module",pool)
