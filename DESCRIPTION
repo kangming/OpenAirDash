@@ -1,0 +1,35 @@
+Package: OpenAirApp
+Title: PKG_TITLE
+Version: 0.0.0.9000
+Authors@R: 
+    person("kang", "ming", , "kangming@3clear.com", role = c("cre", "aut"))
+Description: PKG_DESC.
+License: MIT + file LICENSE
+Imports: 
+    config,
+    DBI,
+    dplyr,
+    golem,
+    lubridate,
+    openair,
+    pool,
+    RPostgreSQL,
+    shiny,
+    shinydashboard,
+    shinydashboardPlus,
+    shinyjqui,
+    shinyWidgets,
+    tidyverse,
+    waiter
+Suggests: 
+    knitr,
+    rmarkdown,
+    spelling,
+    testthat
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.2.3
