@@ -31,7 +31,7 @@ mod_condition_module_ui <- function(id){
         column(
           width = 4,
           selectInput(ns("airsta"), "空气站:",choices = NULL),
-          dateRangeInput(ns("mdate"), '时间范围', start = "2014-04-01" ,
+          dateRangeInput(ns("mdate"), '时间范围', start = Sys.Date()-365,
                          language = "zh-CN",min="2014-04-01",
                          end = NULL)
         ),
